@@ -30,6 +30,7 @@ nav .menu ul li {
   list-style: none;
   text-decoration: none;
   color: black;
+  color: #575757;
 }
 nav .menu ul li:hover {
   cursor: pointer;
@@ -89,12 +90,16 @@ nav .toggle__button .bar {
   text-align: center;
   width: 125px;
   margin: auto;
-  padding: 10px 24px;
+  padding: 10px;
   border-radius: 20px;
   background: #F3976C;
 }
 .hero .hero__info > a:hover {
   cursor: pointer;
+}
+
+section h2 {
+  color: #575757;
 }
 
 section {
