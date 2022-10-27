@@ -1,0 +1,72 @@
+$primary-color: #F3976C;
+$secondary-color: #575757;
+$humberger-color: rgba(0, 0, 0, .05);
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .toggle__button {
+      display: flex;
+    }
+
+    .menu {
+      width: 100%;
+      display: none;
+
+      ul {
+        flex-direction: column;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        background-color: rgba(0, 0, 0, 0.05);
+        width: 100%;
+
+        li {
+          border-top: 1px solid rgba(0, 0, 0, .1);
+          font-size: 14px;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+
+  //   nav {
+  //     .menu {
+  //       .hamburger,
+  //       .menu__toggle {
+  //         display: block;
+  //       }
+  //       ul {
+  //         flex-direction: column;
+  //         position: absolute;
+  //         top: 65px;
+  //         left: 0px;
+  //        
+  //         margin: 0px;
+  //        
+  //         display: none;
+  //         li {
+  //          
+  //         }
+  //       }
+  //       &.menu input:checked~ul {
+  //         display: block;
+  //         animation: drop 0.3s ease-in-out;
+  //       }
+  //     }
+  //   }
+  // }
+  // @keyframes drop {
+  //   0% {
+  //     transform: translateY(50%);
+  //     -webkit-transform: translateY(50%);
+  //     -moz-transform: translateY(50%);
+  //     margin-bottom: 0px;
+  //   }
+  //   100% {
+  //     transform: translateY(0%);
+  //     -webkit-transform: translateY(0%);
+  //     -moz-transform: translateY(0%);
+  //     margin-bottom: 100px;
+  //   }
+}

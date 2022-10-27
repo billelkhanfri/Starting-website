@@ -1,0 +1,136 @@
+$primary-color: #F3976C;
+$secondary-color: #575757;
+$humberger-color: rgba(0, 0, 0, .5);
+
+@mixin link {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+
+  .logo {
+    width: 217px;
+    height: 40px;
+  }
+
+  .menu {
+    ul {
+      display: flex;
+      padding: 0px;
+
+      li {
+        padding: 0px 10px;
+        list-style: none;
+        @include link;
+
+        a {
+          display: block;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .toggle__button {
+    position: absolute;
+    top: 2.3rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 16px;
+
+    .bar {
+      height: 2px;
+      border-radius: 1px;
+      background-color: $humberger-color;
+    }
+  }
+}
+
+//   .hamburger {
+//     position: relative;
+//     width: 26px;
+//     height: 2px;
+//     border-radius: 1px;
+//     background-color: $humberger-color;
+//     display: none;
+//   }
+//   .hamburger:after,
+//   .hamburger:before {
+//     content: "";
+//     position: absolute;
+//     width: 26px;
+//     height: 2px;
+//     border-radius: 1px;
+//     background-color: $humberger-color;
+//   }
+//   .hamburger:after {
+//     top: 6px;
+//   }
+//   .hamburger:before {
+//     top: -6px;
+//   }
+//   .menu__toggle {
+//     position: absolute;
+//     width: 22px;
+//     cursor: pointer;
+//     opacity: 0;
+//     z-index: 3;
+//     display: none;
+//   }
+// }
+.hero {
+  background-image: url(/optimized-img/Plan\ de\ travail\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 440px;
+  background-position: center;
+  display: flex;
+
+  .hero__info {
+    width: 600px;
+    height: 240px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    >img {
+      width: 100px;
+      height: 100px;
+      margin: auto;
+    }
+
+    >h1 {
+      text-align: center;
+      color: $primary-color;
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    >a {
+      @include link;
+      color: white;
+      text-align: center;
+      width: 125px;
+      margin: auto;
+      padding: 10px 24px;
+      border-radius: 20px;
+      background: $primary-color;
+    }
+  }
+}
